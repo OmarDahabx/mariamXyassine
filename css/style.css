@@ -27,3 +27,30 @@ main {
         max-width: 100%;
     }
 }
+
+.diagonal-flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150vw;
+  height: 150vh;
+  background-color: white;
+  z-index: 9999;
+  transform: translate(100%, 100%) rotate(-45deg);
+  animation: diagonalMove 0.8s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes diagonalMove {
+  0% {
+    transform: translate(100%, 100%) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, -100%) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+
+
