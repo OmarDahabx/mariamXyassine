@@ -1,14 +1,29 @@
-main{
+body {
+    overflow-x: hidden;
+}
+main {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-img{
-    overflow-clip-margin : content-box;
-    overflow: clip;
-    max-width: 100%;
+
+.hero-img {
+    max-width: 60%;     
     height: auto;
     display: block;
+}
 
+@media (max-width: 768px) {
+main {
+    display: block;
+    }
 
+.hero-img {
+        width: 100vw;
+        height: 680px;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        max-width: 100%;
+    }
 }
