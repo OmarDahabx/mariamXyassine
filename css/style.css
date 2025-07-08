@@ -20,7 +20,7 @@ main {
 
 .hero-img {
         width: 100vw;
-        height: 680px;
+        height: 100vh;
         object-fit: cover;
         object-position: top;
         display: block;
